@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0301993a4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio Jose Renovato</title>
+</head>
+<body>
+    <!--codigo de contenedor general-->
+    <div class="contenedor">
+        <!--codigo de header o cabeza de pagina-->
+        <header>
+            <div class="logo">
+                <h1>Jose Antonio Renovato Hiedra</h1>
+                <p>Desarrollador web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Programacion</a>
+                <a href="#">Repositorio</a>
+                <a href="#">Sql</a>
+                <a href="#">Css</a>
+            </div>
+        </header>
+        <!--codigo de grid o espacio para contenido-->
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="programacion" 
+            data-etiquetas="progrmacion php"
+            data-descripcion="1.-Realizacion de proyectos en php"
+            >
+                <div class="item-contenido">
+                    <img src="img/m1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="programacion" 
+            data-etiquetas="programacion php"
+            data-descripcion="Codificacion de programas empresariales"
+            >
+                <div class="item-contenido">
+                    <img src="img/m2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="programacion" 
+            data-etiquetas="programacion python"
+            data-descripcion="Codificacion de proyectos en python"
+            >
+                <div class="item-contenido">
+                    <img src="img/m3.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="programacion" 
+            data-etiquetas="programacion python"
+            data-descripcion="Desarrollo de sistemas en python"
+            >
+                <div class="item-contenido">
+                    <img src="img/m4.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="programacion" 
+            data-etiquetas="programacion java script"
+            data-descripcion="desarrollo de sistemas utilizando java script"
+            >
+                <div class="item-contenido">
+                    <img src="img/m5.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="css" 
+            data-etiquetas="css hojas estilos"
+            data-descripcion="manejo de hojas de estilos en css"
+            >
+                <div class="item-contenido">
+                    <img src="img/m6.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="sql" 
+            data-etiquetas="sql bases datos"
+            data-descripcion="gestion de bases de datos en sql"
+            >
+                <div class="item-contenido">
+                    <img src="img/m7.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="sql" 
+            data-etiquetas="sql modelo relacional"
+            data-descripcion="diseño de bases de datos"
+            >
+                <div class="item-contenido">
+                    <img src="img/m8.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="repositorio" 
+            data-etiquetas="repositorio github"
+            data-descripcion="manejo de repocitorios de datos"
+            >
+                <div class="item-contenido">
+                    <img src="img/m9.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--codigo de overlay o contenido frontal al dar clic en una imagen-->
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="cerrar-popop"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+        <!--codigo de footer o pie de pagina-->
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/joseantonio.renovatohiedra.7" target="_blank" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/renovatohiedra/?hl=es-la" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://github.com/joseRenovatoH" target="_blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por Jose Antonio Renovato Hiedra</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
